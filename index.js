@@ -25,9 +25,10 @@ const isPalindrome = () => {
   p.textContent = result;
 };
 
+// let arr = [13, 44, 16, 100, 21];
 const sum = (arr) => {
   let sum = 0;
-  for (let i = 0; i <= arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     const num = arr[i];
     sum += num;
   }
@@ -50,7 +51,7 @@ const favoriteNumbers = () => {
   list.forEach((listItem) => {
     arr.push(listItem.textContent);
   });
-  const sum = sum(arr);
+  let sum = sum(arr);
   const averageOfNums = average();
   const onlyOddsOfNums = onlyOdds(arr);
 
